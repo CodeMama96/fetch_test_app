@@ -1,0 +1,22 @@
+<br> <p style="font-size:35px">Here are your transactions!  </p>
+
+
+    <table>
+        <tr>
+            <th>Payer</th>
+            <th>Points</th>
+            <th>Date</th>
+        </tr>
+
+        <% @transactions.each do |b|  %> 
+        <tr>
+       
+        <td><%=b.payer %></td>
+        <td><%=b.points %></td>
+        <td><%=b.timestamp %></td> 
+        
+        </tr>
+        <% end %>
+    </table>
+     
+     
