@@ -13,13 +13,20 @@ class TransactionsController < ApplicationController
 
     end
 
+    def new
+
+        @result = Transaction.send(params[:operation], *[params[:a], params[:b]])
+        render :index
+    end
+
     def create
         @transaction = Transaction.new(payer: params["payer"], points: params["points"], timestamp: params["timestamp"])
       
     end
 
     def edit
-      @transaction = Transaction.new(payer: params["payer"], points: params["points"], timestamp: params["timestamp"])
-      render '/transactions/edit'
+      @transaction = Transaction.new
+      @transaction.save
+      render '/transactions/all'
     end
 end

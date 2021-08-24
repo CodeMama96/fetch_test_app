@@ -20,19 +20,15 @@
     </table><br>
 
 
-    <form method="POST" action="/transactions">
+    <form method="POST" action="/transactions/all">
 
     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
     <input type="hidden" name="_method" value="PUT">
-    Spend Points: <input type="text" name="transaction[points]" value="5000"/>
+    Spend Points: <input type="text" name="transaction[points]" value=<%= @transaction.points%>"/>
     </input>
 
     </form>
      
-
-    <p> - can only adjust to oldest timestamps</p>
-
-
     <h2> Spend </h2>
     <form method="POST" action="/transactions">
 <label for="spend">Add Points:</label>
@@ -43,11 +39,14 @@
   <option value="Miller Coors">MILLER COORS</option>
 </select>
 
+
 <input type="text" name="transaction[points]" value="some points">
     </input>
-
-<button>Add Expenditure</button>
+<input type="submit" value="Add Expenditure">
 </form>
+
+
+
 
 
 <h2>Total Points</h2>

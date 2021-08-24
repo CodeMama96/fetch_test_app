@@ -1,24 +1,18 @@
-# README
+# FETCH REWARD APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby Version 2.6.1
 
-Things you may want to cover:
+### Deployment
 
-* Ruby version
+Run rails db:create
 
-* System dependencies
+then rails db:migrate
+then rails db:seed for the data
 
-* Configuration
+Type url in browser "http://localhost:3000/"
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
-* ...
+
