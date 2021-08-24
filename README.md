@@ -4,15 +4,21 @@
 
 ### Deployment
 
-Run rails db:create
 
-then rails db:migrate
-then rails db:seed for the data
+Run all following commands in terminal
 
-Type url in browser "http://localhost:3000/"
+bundle install
+rails db:create
+rails db:migrate 
+rails db:seed
 
 
 
-* Deployment instructions
+
+Type http://localhost:3000/ in browser 
+
+
+
+
 
 
