@@ -18,5 +18,13 @@
         </tr>
         <% end %>
     </table>
+
+
+    <form method="POST" action="/transactions">
+    <input type="hidden" name="_method" value="PUT">
+    Add Points: <input type="text" name="transactions[points]" value="<%=@transactions.points%>"
+    </input>
+
+    </form>
      
      

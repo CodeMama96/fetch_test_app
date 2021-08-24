@@ -11,4 +11,8 @@ class TransactionsController < ApplicationController
 
         @transaction = Transaction.find_by(id: params[:id])
     end
+
+    def create
+      
+    end
 end
